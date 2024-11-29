@@ -1,0 +1,274 @@
+.platform{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.platform-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px calc((100% - 1400px) / 2);
+    border-bottom: 2px solid var(--background2);
+    z-index: 999;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: var(--background1);
+}
+.no-platform-header{
+    top: -100px;
+}
+.platform-header .logo{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+.platform-header img{
+    width: 40px;
+}
+.platform-header h1{
+    color: var(--primary);
+    margin: 0;
+    font-size: 20px;
+}
+.platform-header p{
+    color: var(--text);
+    margin: 0;
+    line-height: 15px;
+}
+.platform-header .profile{
+    position: relative;
+    display: flex;
+    gap: 8px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--background2);
+    transition: all .3s ease-in-out;
+}
+.platform-header .profile-activated{
+    background-color: var(--primary);
+    border-radius: 8px 8px 0 0;
+}
+.platform-header .profile .options{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 0;
+    right: 0;
+    z-index: 1;
+    padding: 16px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 0 0 8px 8px;
+    transition: all .3s ease-in-out;
+}
+.platform-header .profile .options:nth-child(n){
+    height: 0;
+    display: none;
+}
+.platform-header .profile .options-activated{
+    top: 100%;
+    height: unset;
+}
+.platform-header .profile .options-activated:nth-child(n){
+    height: unset;
+    display: flex;
+}
+.platform-header .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+.platform-header .profile .texts{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.platform-header .profile h2{
+    font-size: 15px;
+    text-align: left;
+    color: var(--title);
+}
+.platform-header .profile span{
+    font-size: 15px;
+    text-align: left;
+    color: var(--text);
+}
+.platform-header .profile-activated h2,.platform-header .profile-activated span{
+    color: var(--background1);
+}
+.platform-header .profile a{
+    width: 100%;
+    padding: 8px 8px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--background1);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}
+.platform-header .profile a:hover{
+    background-color: var(--background2);
+}
+.platform-header .profile button{
+    width: 100%;
+    padding: 8px 8px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: var(--background1);
+    background-color: #f51d1d;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.semesters{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 32px 0;
+    gap: 32px;
+    padding: 8px calc((100% - 1400px) / 2);
+}
+.semesters .semester{
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: 1px solid var(--background2);
+}
+.semesters .semester h3{
+    text-align: center;
+    font-size: 20px;
+    color: var(--primary);
+}
+.semesters .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+    width: 100%;
+    margin-top: 16px;
+}
+.semesters .cards a{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text);
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--background2);
+    transition: all .3s ease-in-out;
+}
+.semesters .cards a .icon{
+    width: 100%;
+    object-fit: contain;
+    padding: 16px;
+    border-radius: 8px;
+}
+.semesters .cards a p{
+    size: 18px;
+    color: var(--text);
+    font-weight: bold;
+}
+.semesters .cards a:hover{
+    background-color: var(--background2);
+}
+
+.module{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 32px 0;
+    padding: 8px calc((100% - 1400px) / 2);
+    row-gap: 16px;
+    column-gap: 32px;
+    padding: 8px calc((100% - 1400px) / 2);
+}
+.module a{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    border: 1px solid var(--background2);
+    padding: 8px 16px;
+    border-radius: 16px;
+    transition: all .3s ease-in-out;
+    gap: 16px;
+}
+.module a:hover{
+    background-color: var(--background2);
+}
+.module a img{
+    height: 50px;
+}
+.module a p{
+    size: 18px;
+    color: var(--text);
+    font-weight: bold;
+}
+.module a span{
+    background-color: var(--secondary);
+    padding: 0 16px ;
+    border-radius: 16px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1500px) {
+    .platform-header,.semesters,.module{
+        padding: 8px 32px;
+    }
+    .module{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width: 1300px){
+    .semesters .semester .cards{
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .module{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 1000px){
+    .semesters{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .semesters .semester .cards{
+        grid-template-columns: repeat(4,1fr);
+    } 
+    footer ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .module{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 700px){
+    .semesters .semester .cards{
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .platform-header .logo div{
+        display: none;
+    }
+    .module{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 550px){
+    .semesters .semester .cards{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}

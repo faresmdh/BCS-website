@@ -1,0 +1,157 @@
+.login-register{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--background1);
+}
+.login-register .lottie{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    padding: 20%;
+}
+.login-register .form-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+.login-register form{
+    width: 400px;
+    border-radius: 16px;
+    border: 1px solid var(--background2);
+    padding: 16px 32px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.login-register h1{
+    color: var(--primary);
+    font-size: 30px;
+}
+.login-register p{
+    color: var(--text);
+    font-size: 18px;
+    font-weight: medium;
+    margin-bottom: 24px;
+}
+.login-register .input-container{
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+.login-register input[type='email']
+,.login-register input[type='password']
+,.login-register input[type='text']{
+    width: 100%;
+    padding: 8px 36px;
+    border-radius: 8px;
+    border: 2px solid var(--background2);
+    background-color: var(--background2);
+    font-size: 15px;
+}
+.login-register input[type='email']:focus
+,.login-register input[type='password']:focus
+,.login-register input[type='text']:focus{
+    outline: none;
+    border: 2px solid var(--primary);
+}
+.login-register i{
+    position: absolute;
+    font-size: 20px;
+    color: var(--text);
+    top: 12px;
+    margin-right: 8px;
+}
+.login-register input[type='submit']{
+    width: 100%;
+    margin-top: 24px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: var(--background1);
+    font-size: 18px;
+    cursor: pointer;
+}
+.login-register .question{
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    gap: 4px;
+}
+.login-register a{
+    text-decoration:underline;
+    color: var(--title);
+    font-weight: 600;
+}
+.selectdiv {
+    position: relative;
+    min-width: 100%;
+}
+  
+
+select::-ms-expand {
+    display: none;
+}
+  
+.selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    pointer-events: none;
+}
+  
+.selectdiv select {
+    text-align: left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text);
+    border-radius: 8px;
+    background-color: #ffffff;
+    background-image: none;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+.selectdiv select:focus{
+    outline: none;
+}
+@media screen and (max-width: 900px) {
+    .login-register{
+        display: flex;
+    }
+    .login-register .lottie{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .login-register form{
+        box-shadow: none;
+        border: none;
+    }
+}
