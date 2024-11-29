@@ -7,7 +7,7 @@ The web version of <a href="https://github.com/faresmdh/BCS" target="_blank">BCS
 </a>
 
 ## ✨ Features
-Hello Developers! this repository contains the source code of <a href="#">Bouira Computer Society</a> website. Here are the website features:
+Hello Developers! this repository contains the source code of <a href="https://bouira-computer-society.netlify.app/">Bouira Computer Society</a> website. Here are the website features:
 - ### 📱 Android app features
 The web version of Bouira Computer Society contains the same features of the android app. Check <a href="https://github.com/faresmdh/BCS">this repository</a> for more details.
 - ### 💻 Responsive and  friendly UI
